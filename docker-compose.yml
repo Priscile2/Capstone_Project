@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+  backend:
+    build: ./live-transcription-server
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./live-transcription-server:/app
+    environment:
+      - PYTHONUNBUFFERED=1
+    restart: unless-stopped
+
+  frontend:
+    build: ./live-transcription-web
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./live-transcription-web:/app
+    depends_on:
+      - backend
+    restart: unless-stopped
