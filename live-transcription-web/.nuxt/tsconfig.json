@@ -111,7 +111,7 @@
         "./imports"
       ],
       "#app-manifest": [
-        "./manifest/meta/dev"
+        "./manifest/meta/d8333afb-a201-48b8-b4d9-85e00eb9e744.json"
       ],
       "#components": [
         "./components"
@@ -166,7 +166,7 @@
   "exclude": [
     "../dist",
     "../node_modules",
-    "../../../../../node_modules",
+    "../../node_modules",
     "../node_modules/nuxt/node_modules",
     "../node_modules/@pinia/nuxt/node_modules",
     "../node_modules/@nuxt/devtools/node_modules",

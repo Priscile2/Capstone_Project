@@ -27,7 +27,7 @@
 import { ref, watch } from 'vue'
 import AudioRecorder from '~/components/AudioRecorder.vue'
 import { useTranscriptionStore } from '~/stores/transcriptionStore'
-import axios from 'axios'
+import axios from 'axios';
 
 const transcriptionStore = useTranscriptionStore()
 const transcription = ref('')
